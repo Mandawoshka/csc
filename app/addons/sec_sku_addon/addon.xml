@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>sec_sku_addon</id>
+    <version>1.0</version>
+    <priority>4294967294</priority>
+    <position>0</position>
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    <status>active</status>
+    <default_language>ru</default_language>
+
+    <queries>
+        <item for="install">
+            ALTER TABLE ?:products ADD COLUMN second_product_code varchar(32) default '';
+        </item>
+        <item for="uninstall">
+            ALTER TABLE ?:products DROP COLUMN second_product_code;
+        </item>
+    </queries>
+
+</addon>

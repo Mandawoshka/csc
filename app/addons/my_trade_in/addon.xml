@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+<id>my_trade_in</id>
+<version>1.0</version>
+<priority>1000</priority>
+<position>100</position>
+<default_language>ru</default_language>
+<auto_install>ULTIMATE,MULTIVENDOR</auto_install>
+<status>active</status>
+<dependencies>
+<item id="rus_payments" type="product" min_version="4.13.1"/>
+<item id="rus_ruble" type="product" min_version="4.13.1"/>
+</dependencies>
+<settings edition_type="ROOT,ULT:VENDOR">
+<sections>
+<section id="general" name="Общие настройки"/>
+</sections>
+<items>
+<item id="trade_in_enabled" name="Включить trade-in" type="checkbox" position="10" edition_type="ROOT,ULT:VENDOR">
+<default_value>Y</default_value>
+<handler>fn_settings_actions_addons_my_trade_in_trade_in_enabled</handler>
+<section_id>general</section_id>
+</item>
+<item id="trade_in_formula" name="Формула расчета стоимости старого товара" type="input" position="20" edition_type="ROOT,ULT:VENDOR">
+<default_value>price * 0.5</default_value>
+<tooltip>Введите формулу, которая будет использоваться для расчета стоимости старого товара в зависимости от его цены и характеристик. Вы можете использовать следующие переменные: price - цена товара, feature_1 - значение характеристики 1, feature_2 - значение характеристики 2 и т.д.</tooltip>
+<section_id>general</section_id>
+</item>
+<item id="trade_in_category_ids" name="Категории товаров, доступные для trade-in" type="categories_select" position="30" edition_type="ROOT,ULT:VENDOR">
+<default_value></default_value>
+<tooltip>Выберите категории товаров, которые можно обменять на новые с доплатой. Если не выбрано ни одной категории, то trade-in будет доступен для всех товаров.</tooltip>
+<section_id>general</section_id>
+</item>
+</items>
+</settings>
+<language_variables>
+<item lang="ru" id="my_trade_in.trade_in">Trade-in</item>
+<item lang="ru" id="my_trade_in.select_old_product">Выберите старый товар</item>
+<item lang="ru" id="my_trade_in.old_product_price">Стоимость старого товара</item>
+<item lang="ru" id="my_trade_in.add_to_cart_with_trade_in">Добавить в корзину с trade-in</item>
+<item lang="ru" id="my_trade_in.trade_in_info">Вы можете обменять свой старый товар на этот новый с доплатой. Нажмите на кнопку "Trade-in", чтобы выбрать старый товар и узнать его стоимость.</item>
+</language_variables>
+</addon>

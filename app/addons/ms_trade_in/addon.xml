@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>ms_trade_in</id>
+    <version>1.0</version>
+    <priority>2900</priority>
+    <position>0</position>
+    <status>active</status>
+    <authors>
+        <author>
+            <name>Morningstar</name>
+        </author>
+    </authors>
+    <queries>
+        <item>
+            ALTER TABLE `?:categories`
+            ADD COLUMN `use_tradein` char(1) NOT NULL DEFAULT 'N';
+        </item>
+    </queries>
+    <default_language>en</default_language>
+</addon>

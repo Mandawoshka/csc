@@ -1,0 +1,49 @@
+msgid ""
+msgstr "Project-Id-Version: tygh"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Addons::name::ecl_tradein"
+msgid "[eCom Labs] Trade-In"
+msgstr "[eCom Labs] Trade-In"
+
+msgctxt "Addons::description::ecl_tradein"
+msgid "Adds the ability to apply for a trade-in"
+msgstr "Adds the ability to apply for a trade-in"
+
+msgctxt "Languages::ecl_tradein"
+msgid "[eCom Labs] Trade-In"
+msgstr "[eCom Labs] Trade-In"
+
+msgctxt "Languages::trade_in"
+msgid "Trade-In"
+msgstr "Trade-In"
+
+msgctxt "Languages::use_for_trade_in"
+msgid "Use for TradeIn"
+msgstr "Use Category for trade-in"
+
+msgctxt "Languages::make_a_request"
+msgid "Make a request"
+msgstr "Make a request"
+
+msgctxt "Languages::select_product_from_list"
+msgid "Select product Text A"
+msgstr "Select from the list the model of the old gadget that you want to hand over."
+
+msgctxt "Languages::select_product_from_list_b"
+msgid "Select product Text B"
+msgstr "Select the gadget model you want to buy from the list."
+
+msgctxt "Languages::select_product_from_list_c"
+msgid "Select product Text C"
+msgstr "Specify the device model you want to take and fill out the questionnaire."
+
+msgctxt "Languages::old_device"
+msgid "Old device"
+msgstr "Old device"
+
+msgctxt "Languages::new_device"
+msgid "New device"
+msgstr "New device"

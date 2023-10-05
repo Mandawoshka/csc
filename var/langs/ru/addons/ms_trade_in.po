@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cs-cart-latest\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Russian\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: crowdin.com\n"
+"Last-Translator: cscart <zeke@cs-cart.com>\n"
+"PO-Revision-Date: 2014-10-16 03:01-0400\n"
+
+msgctxt "Addons::name::ecl_tradein"
+msgid "[eCom Labs] Trade-In"
+msgstr "[eCom Labs] Trade-In"
+
+msgctxt "Addons::description::ecl_tradein"
+msgid "Adds the ability to apply for a trade-in"
+msgstr "Adds the ability to apply for a trade-in"
+
+msgctxt "Languages::ecl_tradein"
+msgid "[eCom Labs] Trade-In"
+msgstr "[eCom Labs] Trade-In"
+
+msgctxt "Languages::trade_in"
+msgid "Trade-In"
+msgstr "Trade-In"
+
+msgctxt "Languages::use_for_trade_in"
+msgid "Use for TradeIn"
+msgstr "Использовать категория для trade-in"
+
+msgctxt "Languages::make_a_request"
+msgid "Make a request"
+msgstr "Оформить заявку"
+
+msgctxt "Languages::select_product_from_list"
+msgid "Select product Text A"
+msgstr "Выберите из списка модель старого гаджета, которую вы хотите сдать."
+
+msgctxt "Languages::select_product_from_list_b"
+msgid "Select product Text B"
+msgstr "Выберите из списка модель гаджета, которую вы хотите купить."
+
+msgctxt "Languages::select_product_from_list_c"
+msgid "Select product Text C"
+msgstr "Укажите модель устройства, которую хотите сдать и заполните анкету."
+
+msgctxt "Languages::old_device"
+msgid "Old device"
+msgstr "Старое устройство"
+
+msgctxt "Languages::new_device"
+msgid "New device"
+msgstr "Новое устройство"
+
+msgctxt "Languages::select_product_type"
+msgid "Select type"
+msgstr "Выберите тип устройства"
+
+msgctxt "Languages::select_product_brand"
+msgid "Select brand"
+msgstr "Выберите бренд устройства"
+
+msgctxt "Languages::we_will_contact_to_send_you_price"
+msgid "We will contact with you"
+msgstr "Оценка вашего устройства выше стоимости устройства. Для обмена необходимо пройти консультацию у менеджера."

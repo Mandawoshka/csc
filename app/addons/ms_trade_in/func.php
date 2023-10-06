@@ -6,12 +6,16 @@ use Tygh\Registry;
 if (!defined('BOOTSTRAP')) { die('Access denied'); }
 
 
-function fn_ms_trade_in_get_categories($params, $join, &$condition, $fields, $group_by, $sortings, $lang_code)
+function fn_ms_trade_in_get_categories()
 {
-	if (isset($params['use_tradein'])){
-        $condition .= db_quote(' AND ?:categories.use_tradein = ?s', 'Y');
-        $condition .= db_quote(' AND ?:categories.status IN (?a) ', array("A","H"));
-	}
+    $categories = db_get_array("SELECT category_id, category FROM ?:categories WHERE status = 'A' AND parent_id = 0");
+
+    $result = array();
+    foreach ($categories as $category) {
+        $result[$category['category_id']] = $category['category'];
+    }
+
+    return $result;
 }
 
 function fn_ms_trade_in_get_tradein_categories()
@@ -33,4 +37,16 @@ function fn_ms_trade_in_get_tradein_subcategories($category_id)
 	$categories = db_get_hash_array("SELECT c.category_id, d.category FROM ?:categories as c LEFT JOIN ?:category_descriptions as d ON c.category_id = d.category_id AND d.lang_code = ?s WHERE c.status IN (?a) AND c.parent_id = ?i", 'category_id', CART_LANGUAGE, array("A","H"), $category_id);
 	fn_print_r($categories);
 	return $categories;	
+}
+
+function fn_get_categories_list()
+{
+    $categories = db_get_array("SELECT category_id, category FROM ?:categories WHERE status = 'A' AND parent_id = 0");
+
+    $result = array();
+    foreach ($categories as $category) {
+        $result[$category['category_id']] = $category['category'];
+    }
+
+    return $result;
 }

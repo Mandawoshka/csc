@@ -1,6 +1,6 @@
 <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" async></script>
-<div id="ecl_tradein_container">
+<div id="ms_trade_in_container">
 	<section class="ecl-tradein__box" >
 		<ol class="ecl-tradein__list">
 			<li class="ecl-tradein__item">
@@ -81,7 +81,7 @@
 	                link_meta="ecl-tradein__add "
 	                content=""
 	                link_text_meta="ecl-tradein__btn-text"
-	                dialog_additional_attrs=["data-ca-dialog-purpose" => "ecl_tradein"]
+	                dialog_additional_attrs=["data-ca-dialog-purpose" => "ms_trade_in"]
 	        	}
 	      	</li>
 	      	<li class="ecl-tradein__item">
@@ -105,7 +105,7 @@
 	                link_meta="ecl-tradein__add cm-dialog-destroy-on-close"
 	                link_text_meta="ecl-tradein__btn-text"
 	                content=""
-	                dialog_additional_attrs=["data-ca-dialog-purpose" => "ecl_tradein"]
+	                dialog_additional_attrs=["data-ca-dialog-purpose" => "ms_trade_in"]
 	            }
 	        </li>
 	        <li class="ecl-tradein__item">
@@ -160,4 +160,4 @@
 	      	</li>
 	      </ol>
 	  </section>
-  <!--ecl_tradein_container--></div>
+  <!--ms_trade_in_container--></div>

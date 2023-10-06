@@ -42,7 +42,7 @@ if ($mode == 'view') {
 		    Tygh::$app['view']->assign('product_second', $product_second);	
 		}
 	    if (!empty($_SESSION['tradein']['first_product']) && !empty($_SESSION['tradein']['second_product'])){
-	    	$discount = fn_ecl_tradein_get_dicsount_tradein_price($_SESSION['tradein']['first_product'], $_SESSION['tradein']['second_product']);
+	    	$discount = fn_ms_trade_in_get_dicsount_tradein_price($_SESSION['tradein']['first_product'], $_SESSION['tradein']['second_product']);
 	    	Tygh::$app['view']->assign('discount_price', $discount);	
 	    }
 }
@@ -57,7 +57,7 @@ if ($mode == 'request'){
 	if (isset($params['step'])){
 		$subcategories_first = [];
 		if ($params['category_id']){
-			$subcategories_first = fn_ecl_tradein_get_tradein_subcategories($params['category_id']);
+			$subcategories_first = fn_ms_trade_in_get_tradein_subcategories($params['category_id']);
 		}
 		Tygh::$app['view']->assign('subcategories_first', $subcategories_first);
 		Tygh::$app['view']->assign('selected_category_first', $params['category_id']);
@@ -71,7 +71,7 @@ if ($mode == 'request'){
 	if (isset($params['stepsec'])){
 		$subcategories_second = [];
 		if ($params['category_id']){
-			$subcategories_second = fn_ecl_tradein_get_tradein_subcategories($params['category_id']);
+			$subcategories_second = fn_ms_trade_in_get_tradein_subcategories($params['category_id']);
 		}
 		Tygh::$app['view']->assign('subcategories_second', $subcategories_second);
 		Tygh::$app['view']->assign('selected_category_second', $params['category_id']);
@@ -81,8 +81,8 @@ if ($mode == 'request'){
 			Tygh::$app['view']->assign('products_second', $products_second);
 		}	
 	}
-	$categories_first = fn_ecl_tradein_get_tradein_subcategories(870);
-	$categories_second = fn_ecl_tradein_get_tradein_categories();
+	$categories_first = fn_ms_trade_in_get_tradein_subcategories(870);
+	$categories_second = fn_ms_trade_in_get_tradein_categories();
     Tygh::$app['view']->assign('categories_first', $categories_first);
     Tygh::$app['view']->assign('categories_second', $categories_second);
 }

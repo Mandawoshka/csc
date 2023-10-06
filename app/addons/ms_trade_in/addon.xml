@@ -10,11 +10,17 @@
             <name>Morningstar</name>
         </author>
     </authors>
+    <default_language>ru</default_language>
+
     <queries>
-        <item>
+        <item for="install">
             ALTER TABLE `?:categories`
             ADD COLUMN `use_tradein` char(1) NOT NULL DEFAULT 'N';
         </item>
+        <item for="uninstall">
+            ALTER TABLE `?:categories`
+            DROP COLUMN `use_tradein`;
+        </item>
     </queries>
-    <default_language>en</default_language>
+    
 </addon>

@@ -1,1 +1,1 @@
-{style src="addons/ecl_tradein/styles.less"}
+{style src="addons/ms_trade_in/styles.less"}

@@ -2,28 +2,6 @@
 <addon scheme="3.0">
     <id>ms_trade_in</id>
     <version>1.0</version>
-
-    <settings layout="separate">
-        <sections>
-            <section id="general">
-                <items>
-                    <item id="buy_category_id" default_value="10">
-                        <type>selectbox</type>
-                        <name>Категория для покупки</name>
-                        <description>Выберите категорию, из которой будут доступны товары для покупки по программе trade-in.</description>
-                        <handler>fn_get_categories_list</handler>
-                    </item>
-                    <item id="exchange_category_id" default_value="20">
-                        <type>selectbox</type>
-                        <name>Категория для обмена</name>
-                        <description>Выберите категорию, из которой будут доступны товары для обмена по программе trade-in.</description>
-                        <handler>fn_get_categories_list</handler>
-                    </item>
-                </items>
-            </section>
-        </sections>
-    </settings>
-
     <priority>2900</priority>
     <position>0</position>
     <status>active</status>
